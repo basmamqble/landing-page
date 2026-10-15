@@ -24,7 +24,7 @@ export default function TeamSection() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="rounded-3xl border border-orange-500/40 ring-2 ring-orange-500/10 overflow-hidden p-6 text-center transition-all flex flex-col justify-between hover:-translate-y-1 shadow-xl bg-slate-900/80 backdrop-blur-md"
+              className="rounded-3xl border border-orange-500/40 ring-2 ring-orange-500/10 overflow-hidden p-6 text-center transition-all flex flex-col justify-between hover:-translate-y-1 shadow-xl bg-slate-950/60 backdrop-blur-xl"
             >
               <div>
                 {/* Leader Badge */}
@@ -32,7 +32,7 @@ export default function TeamSection() {
                   <span className={`inline-block px-4 py-1 rounded-full text-xs font-bold border ${
                     member.isLeader 
                       ? 'text-orange-300 bg-orange-500/20 border-orange-400' 
-                      : 'text-slate-300 bg-slate-800 border-slate-700'
+                      : 'text-slate-300 bg-slate-900/80 border-slate-700'
                   }`}>
                     {member.isLeader ? '★ قائد الفريق' : '⚡ عضو فريق العمل'}
                   </span>
@@ -54,7 +54,7 @@ export default function TeamSection() {
                 </p>
 
                 {/* Info List */}
-                <div className="text-xs text-slate-300 space-y-2 mb-6 text-right bg-slate-950/50 p-4 rounded-2xl border border-slate-800">
+                <div className="text-xs text-slate-300 space-y-2 mb-6 text-right bg-slate-950/40 p-4 rounded-2xl border border-slate-800/80">
                   <p className="flex items-center gap-2 truncate">
                     <span>📧</span>
                     <span className="truncate font-medium">{member.email}</span>
@@ -71,7 +71,7 @@ export default function TeamSection() {
               </div>
 
               {/* Action Links */}
-              <div className="pt-4 border-t border-slate-800 flex flex-col gap-2">
+              <div className="pt-4 border-t border-slate-800/80 flex flex-col gap-2">
                 {/* LinkedIn Link */}
                 <a
                   href={member.linkedin}

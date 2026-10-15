@@ -8,29 +8,30 @@ export default function HowItWorks() {
   ];
 
   return (
-<section id="how-it-works" className="py-20 border-t border-slate-800/50 bg-transparent">      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="how-it-works" className="py-20 border-t border-slate-800/50 bg-transparent text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-xs font-bold px-3 py-1 rounded-full bg-orange-100 text-orange-700 tracking-wider uppercase mb-3 inline-block">
+          <span className="text-xs font-bold px-3 py-1 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 tracking-wider uppercase mb-3 inline-block">
             طريقة العمل
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
             تجربة <span style={{ color: 'var(--color-primary)' }}>لحّق حالك</span>
           </h2>
-          <p className="text-slate-600 font-medium">عرض مؤقت + موقع قريب + اكتشاف سريع</p>
+          <p className="text-slate-300 font-medium">عرض مؤقت + موقع قريب + اكتشاف سريع</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, idx) => (
             <div 
               key={idx} 
-              className="p-8 rounded-3xl border border-slate-200 bg-slate-50 card-hover-effect group"
+              className="p-8 rounded-3xl border border-orange-500/40 bg-slate-950/60 backdrop-blur-xl card-hover-effect group shadow-xl"
             >
-              <div className="w-14 h-14 rounded-2xl bg-slate-900 text-white font-black text-xl flex items-center justify-center mb-6 group-hover:bg-orange-600 transition-colors shadow-md">
+              <div className="w-14 h-14 rounded-2xl bg-slate-900 text-white font-black text-xl flex items-center justify-center mb-6 group-hover:bg-orange-600 transition-colors shadow-md border border-slate-800">
                 {step.num}
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">{step.title}</h3>
-              <p className="text-slate-600 leading-relaxed font-medium">{step.desc}</p>
+              <h3 className="text-2xl font-bold text-white mb-3">{step.title}</h3>
+              <p className="text-slate-300 leading-relaxed font-medium">{step.desc}</p>
             </div>
           ))}
         </div>

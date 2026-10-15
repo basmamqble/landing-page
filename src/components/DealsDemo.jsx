@@ -20,14 +20,14 @@ export default function DealsDemo() {
           {mockDeals.map((deal) => (
             <div 
               key={deal.id} 
-              className="rounded-3xl border border-orange-500/40 ring-2 ring-orange-500/10 bg-slate-900/80 backdrop-blur-md p-6 flex flex-col justify-between card-hover-effect shadow-xl"
+              className="rounded-3xl border border-orange-500/40 ring-2 ring-orange-500/10 bg-slate-950/60 backdrop-blur-xl p-6 flex flex-col justify-between card-hover-effect shadow-xl"
             >
               <div>
                 <div className="flex justify-between items-center mb-4">
-                  <span className="px-3 py-1 rounded-full text-xs font-bold bg-slate-800 text-slate-300 border border-slate-700">
+                  <span className="px-3 py-1 rounded-full text-xs font-bold bg-slate-800/80 text-slate-300 border border-slate-700">
                     {deal.category}
                   </span>
-                  <span className="px-3 py-1 rounded-full text-xs font-bold text-emerald-300 bg-emerald-950/40 border border-emerald-500/40">
+                  <span className="px-3 py-1 rounded-full text-xs font-bold text-emerald-300 bg-emerald-950/50 border border-emerald-500/40">
                     خصم {deal.discount}
                   </span>
                 </div>
@@ -35,13 +35,13 @@ export default function DealsDemo() {
                 <h3 className="text-xl font-bold text-white mb-2">{deal.title}</h3>
                 <p className="text-sm font-semibold text-orange-400 mb-6">📍 {deal.store}</p>
 
-                <div className="flex items-baseline gap-3 mb-6 bg-slate-950/50 p-4 rounded-2xl border border-slate-800">
+                <div className="flex items-baseline gap-3 mb-6 bg-slate-950/40 p-4 rounded-2xl border border-slate-800/80">
                   <span className="text-3xl font-black text-white">{deal.newPrice}</span>
                   <span className="text-sm text-slate-400 line-through font-medium">{deal.oldPrice}</span>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-slate-800 flex items-center justify-between">
+              <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between">
                 <span className="text-xs text-slate-400 font-bold">⏳ يتبقّى: {deal.timeLeft}</span>
                 <span 
                   className="px-4 py-2 rounded-xl text-xs font-bold text-white shadow-sm border border-orange-500/30"

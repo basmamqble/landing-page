@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProblemSolution from './components/ProblemSolution';
 import DealsDemo from './components/DealsDemo';
+import Features from './components/Features';
 import TeamSection from './components/TeamSection';
 import Footer from './components/Footer';
 
@@ -10,20 +11,21 @@ import bgPattern from './assets/bg-pattern.jpg';
 
 export default function App() {
   return (
-    <div 
-      className="min-h-screen bg-cover bg-center bg-no-repeat bg-scroll md:bg-fixed text-white relative"
-      style={{ backgroundImage: `url(${bgPattern})` }}
-    >
-      {/* طبقة تغميق وضبابية (Overlay + Backdrop Blur) */}
-      <div className="absolute inset-0 bg-slate-900/65 backdrop-blur-sm pointer-events-none z-0"></div>
+    <div className="relative min-h-screen text-white overflow-x-hidden">
+      {/* صورة الخلفية ثابتة وتغطي الشاشة بالكامل بدون أي لون يغطيها */}
+      <div 
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat -z-10"
+        style={{ backgroundImage: `url(${bgPattern})` }}
+      ></div>
 
-      {/* محتوى الموقع يجب أن يكون فوق الطبقة عبر استخدام relative و z-10 */}
+      {/* محتوى الموقع بالكامل فوق الخلفية */}
       <div className="relative z-10">
         <Navbar />
         <main>
           <Hero />
           <ProblemSolution />
           <DealsDemo />
+          <Features />
           <TeamSection />
         </main>
         <Footer />
