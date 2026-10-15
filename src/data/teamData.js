@@ -22,6 +22,17 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/basma-meqble-680112344?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
   },
   {
+    id: 7,
+    name: 'اية الزعانين',
+    role: 'UI/UX & Graphic Designer (Team Lead)',
+    email: 'ayazanean2004@gmail.com',
+    phone: '0594643819',
+    location: 'المحافظة الوسطى - دير البلح',
+    image: ayaImg,
+    isLeader: true,
+    linkedin: 'https://www.linkedin.com/in/aya-zanean-627a61279?utm_source=share_via&utm_content=profile&utm_medium=member_android'
+  },
+  {
     id: 2,
     name: 'مرح المقادمة',
     role: 'Mobile Developer (Flutter)',
@@ -75,17 +86,6 @@ export const teamMembers = [
     image: alaaImg,
     isLeader: false,
     linkedin: 'https://www.linkedin.com/in/alaa-husain-alkronz-3686ba378?utm_source=share_via&utm_content=profile&utm_medium=member_android'
-  },
-  {
-    id: 7,
-    name: 'اية الزعانين',
-    role: 'UI/UX & Graphic Designer',
-    email: 'ayazanean2004@gmail.com',
-    phone: '0594643819',
-    location: 'المحافظة الوسطى - دير البلح',
-    image: ayaImg,
-    isLeader: false,
-    linkedin: 'https://www.linkedin.com/in/aya-zanean-627a61279?utm_source=share_via&utm_content=profile&utm_medium=member_android'
   },
   {
     id: 8,
