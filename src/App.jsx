@@ -6,23 +6,28 @@ import DealsDemo from './components/DealsDemo';
 import TeamSection from './components/TeamSection';
 import Footer from './components/Footer';
 
-// 1. استيراد صورة الخلفية برمجياً لضمان التعرف عليها أثناء الـ Build على Vercel
 import bgPattern from './assets/bg-pattern.jpg';
 
 export default function App() {
   return (
     <div 
-      className="min-h-screen bg-cover bg-center bg-no-repeat bg-scroll md:bg-fixed text-white"
+      className="min-h-screen bg-cover bg-center bg-no-repeat bg-scroll md:bg-fixed text-white relative"
       style={{ backgroundImage: `url(${bgPattern})` }}
     >
-      <Navbar />
-      <main>
-        <Hero />
-        <ProblemSolution />
-        <DealsDemo />
-        <TeamSection />
-      </main>
-      <Footer />
+      {/* طبقة تغميق وضبابية (Overlay + Backdrop Blur) */}
+      <div className="absolute inset-0 bg-slate-900/65 backdrop-blur-sm pointer-events-none z-0"></div>
+
+      {/* محتوى الموقع يجب أن يكون فوق الطبقة عبر استخدام relative و z-10 */}
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <ProblemSolution />
+          <DealsDemo />
+          <TeamSection />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

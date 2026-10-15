@@ -100,7 +100,7 @@ export const teamMembers = [
   },
   {
     id: 9,
-    name: 'عبد الكريم',
+    name: 'عبد الكريم خطاب',
     role: 'Graphic Designer',
     email: 'I28938010@gmail.com',
     phone: '0595022916',
