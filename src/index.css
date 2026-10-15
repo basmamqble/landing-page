@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #ea580c;
+  --color-navy: #0b132b;
+  --color-text-main: #ffffff;
+}
+
+/* إجبار الـ body وكل الأقسام على إظهار الصورة */
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #0b132b !important;
+background-image: linear-gradient(to bottom, rgba(11, 19, 43, 0.40), rgba(11, 19, 43, 0.65)), url('./assets/bg-pattern.jpg') !important;  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  color: var(--color-text-main);
+  font-family: system-ui, -apple-system, sans-serif;
+  direction: rtl;
+  overflow-x: hidden;
+}
