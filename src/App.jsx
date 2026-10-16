@@ -2,23 +2,24 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProblemSolution from './components/ProblemSolution';
-import DealsDemo from './components/DealsDemo';
+import DealsDemo from './components/BusinessModelSection';
 import Features from './components/Features';
 import TeamSection from './components/TeamSection';
 import Footer from './components/Footer';
-
 import bgPattern from './assets/bg-pattern.jpg';
 
 export default function App() {
   return (
     <div className="relative min-h-screen text-white overflow-x-hidden">
-      {/* صورة الخلفية ثابتة وتغطي الشاشة بالكامل بدون أي لون يغطيها */}
-      <div 
-        className="fixed inset-0 bg-cover bg-center bg-no-repeat -z-10"
-        style={{ backgroundImage: `url(${bgPattern})` }}
-      ></div>
+      {/* طبقة الخلفية */}
+      <div
+        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(11,19,43,0.40), rgba(11,19,43,0.65)), url(${bgPattern})`,
+        }}
+      />
 
-      {/* محتوى الموقع بالكامل فوق الخلفية */}
+      {/* المحتوى */}
       <div className="relative z-10">
         <Navbar />
         <main>
