@@ -28,8 +28,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8 font-semibold text-white">
             <a href="#about" className="hover:text-orange-500 active:text-orange-500 transition-colors">عن المنصة</a>
             <a href="#problem" className="hover:text-orange-500 active:text-orange-500 transition-colors">المشكلة والحل</a>
-            <a href="#deals" className="hover:text-orange-500 active:text-orange-500 transition-colors">عروض حية</a>
-            <a href="#team" className="hover:text-orange-500 active:text-orange-500 transition-colors">فريق العمل</a>
+<a href="#business-model" className="hover:text-orange-500 active:text-orange-500 transition-colors">استدامة المشروع</a>            <a href="#team" className="hover:text-orange-500 active:text-orange-500 transition-colors">فريق العمل</a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -46,7 +45,7 @@ export default function Navbar() {
         <div className="md:hidden px-4 pt-2 pb-6 border-t border-slate-800 bg-slate-950/90 backdrop-blur-xl space-y-3 font-medium">
           <a href="#about" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-orange-500">عن المنصة</a>
           <a href="#problem" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-orange-500">المشكلة والحل</a>
-          <a href="#deals" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-orange-500">عروض حية</a>
+<a href="#business-model" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-orange-500">استدامة المشروع</a>
           <a href="#team" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-orange-500">فريق العمل</a>
         </div>
       )}
