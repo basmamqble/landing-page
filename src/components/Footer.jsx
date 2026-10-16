@@ -37,7 +37,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm font-medium">
               <li><a href="#about" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span>←</span> عن المنصة</a></li>
               <li><a href="#problem" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span>←</span> المشكلة والحل</a></li>
-              <li><a href="#deals" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span>←</span> العروض الحية</a></li>
+              <li><a href="#business-model" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span>←</span> استدامة المشروع</a></li>
               <li><a href="#team" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span>←</span> فريق العمل</a></li>
             </ul>
           </div>
